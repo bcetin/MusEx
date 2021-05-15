@@ -1,6 +1,6 @@
-#N canvas -8 0 1261 966 12;
+#N canvas 433 89 1261 966 12;
 #X obj 207 53 notein;
-#X obj 298 355 outlet;
+#X obj 300 429 outlet;
 #X floatatom 210 143 5 0 0 0 - - -;
 #X floatatom 390 292 5 0 0 0 - - -;
 #X obj 579 98 pack \$0;
@@ -11,7 +11,7 @@
 #X obj 304 299 int;
 #X obj 237 265 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X floatatom 366 346 5 0 0 0 - - -;
+#X floatatom 476 367 5 0 0 0 - - -;
 #X obj 372 180 pack \$1;
 #X floatatom 491 211 5 0 0 0 - - -;
 #X obj 676 77 array define \$0-lu;
@@ -20,6 +20,7 @@
 #X floatatom 617 181 5 0 0 0 - - -;
 #X msg 579 123 \; \$1-lu 0 0 36 38 42 46 50 45 51 49;
 #X obj 566 56 t b b b;
+#X obj 299 356 sel 0;
 #X connect 0 0 2 0;
 #X connect 0 1 9 1;
 #X connect 2 0 7 0;
@@ -31,7 +32,7 @@
 #X connect 7 0 8 0;
 #X connect 8 1 10 0;
 #X connect 9 0 11 0;
-#X connect 9 0 1 0;
+#X connect 9 0 19 0;
 #X connect 10 0 9 0;
 #X connect 12 0 6 0;
 #X connect 12 0 13 0;
@@ -39,3 +40,4 @@
 #X connect 18 0 12 0;
 #X connect 18 1 4 0;
 #X connect 18 2 14 0;
+#X connect 19 1 1 0;
